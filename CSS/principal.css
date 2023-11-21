@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Marcellus&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	background-color:#FFF;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+li,a{
+	text-decoration:none;
+	font-family: 'Inter', sans-serif;
+	font-weight:500;
+}
+
+header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	position:fixed;
+	width:100%;
+}
+.link-logo{
+	width:17%;
+	height:40px;
+	margin-left:1%
+}
+.logo{
+	margin-left:0.208%;
+	margin-top:1.111%;
+	height:100%;
+	width:100%;
+	cursor:pointer;
+}
+
+nav{
+	margin-right:2.083%;
+	height:50px;
+}
+.nav-links{
+	list-style:none;
+	margin-top:3.5%;
+}
+
+.nav-links li{
+	display:inline-block;
+	padding: 0px 20px;
+	font-size:16px;
+}
+
+.nav-links li a{
+	transition: all 0.3s ease 0s;
+	color:black;
+}
+
+.nav-links li a:hover{
+	text-decoration:underline;
+	text-decoration-thickness: 1px;
+}
+
+.nav-div img{
+	padding-left:15px;
+	cursor:pointer;
+	margin-top:2.111%;
+	width:10%;
+	height:10%;
+}
+
+.destaques{
+	display:flex;
+	flex-direction:row
+	width:100%;
+	height:810px;
+	background-color:blue;
+	font-family: 'Marcellus', serif;
+}
+.dest1{
+	width:63.889%;
+}
+.dest2{
+	width:36.111%;
+}
+
+.aa{
+	position:absolute;
+	font-size:45px;
+	background-color: rgba( 0, 0, 0, 0);
+	margin-top:58%;
+	margin-left:3%;
+	color:white;
+	width:48%;
+}
+.aa img{
+	background: url(<path-to-image>);
+	margin-left:3%;
+}
+.aa a{
+	background-color: rgba( 0, 0, 0, 0);
+}
+.ab{
+	width:350px;
+	position:absolute;
+	font-size:45px;
+	background-color: rgba( 0, 0, 0, 0);
+	margin-top:55%;
+	margin-left:70%;
+	color:white;
+	text-align:center;
+}
+
+.ab img{
+	background: url(<path-to-image>);
+	margin-left:3%;
+}
+
+.ab a{
+	background-color: rgba( 0, 0, 0, 0);
+}
+
+#produtos{
+	display:flex;
+	justify-content: space-around;
+}
+#produtosm{
+	display:flex;
+	justify-content: space-around;
+}
+#produtosh{
+	display:flex;
+	justify-content: space-around;
+}
+#produtosk{
+	display:flex;
+	justify-content: space-around;
+}
+.card{
+	margin-top:98px;
+	width: 22.431%;
+	height: 41.222%;
+	background-color: #f1f3f2;
+	border-radius:3px;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+}
+.card h3{
+    text-align: left;
+    color: black;
+	font-family: 'Marcellus', serif;
+	font-size:15px;
+}
+
+footer{
+	color:black;
+	display:flex;
+	margin-top:275px;
+	width:100%;
+	height: 100px;
+}
+
+.redes{
+	cursor:pointer;
+	margin-left:2%;
+
+}
+
+.copy{
+	font-family:'Marcellus';
+	font-size:20px;
+	margin-left:50%;
+	margin-top:3%;
+}
+
+@media screen and (min-width: 1300px) and (max-width:1500px) {
+	.aa{
+		position:absolute;
+		margin-top:51%;
+	}
+		
+		.ab{
+			position:absolute;
+			margin-top:48%;
+		}
+}
+@media screen and (min-width: 1600px) and (max-width:1800px) {
+	.aa{
+		position:absolute;
+		margin-top:45%;
+	}
+		
+		.ab{
+			position:absolute;
+			margin-top:42%;
+		}
+}
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width:500px) {
+html{
+
+	overflow-x:hiden;
+}
+
+header{
+	display:flex;
+	align-items:center;
+	position:fixed;
+}
+.link-logo{
+	width:150px;
+}
+
+.nav-links{
+	width:200px;
+	margin-left:10%;
+	margin-top:8%;
+}
+.nav-links li{
+	font-size:11px;
+	margin-left:5%;
+	padding:0;
+	
+}
+
+.nav-div{
+	margin-left:5%;
+}
+
+.destaques{
+	height:307.771%;
+	padding-top:10%;
+}
+.aa{
+	font-size:10px;
+	margin-top:50%;
+}
+
+.aa img{
+	width:7%;
+}
+.ab{
+	font-size:10px;
+	margin-top:50%;
+	margin-left:45%;
+}
+.ab img{
+
+	width:5%;
+}
+
+#produtos{
+	display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+		justify-content:space-around;
+
+}
+#produtosm{
+	display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+		justify-content:space-around;
+}
+#produtosh{
+	display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+		justify-content:space-around;
+}
+.card{
+	width:110%;
+}
+.card img{
+	height:90%;
+	margin-bottom:5%;
+}
+
+.card h3{
+	font-size:12px;
+}
+	
+	footer{
+		display:none;
+	}
+}	
